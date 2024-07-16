@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="pg__home_top_section_title">Welcome!</string>
+    <string name="pg__home">Home Button</string>
+    <string name="pg__home_tap_to_load_content">Tap to refresh photos</string>
+    <string name="pg__details">Pic Details</string>
+    <string name="pg__details_desc">Back Button</string>
+    <string name="pg__loading">Loading Data </string>
+    <string name="pg__retry">Please try again</string>
+    <string name="pg__app_name">MovieBuff</string>
+</resources>
