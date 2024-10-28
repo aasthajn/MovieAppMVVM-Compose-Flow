@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace = "com.app.newsapp"
+    namespace = "com.app.movieapp"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.app.newsapp"
+        applicationId = "com.app.movieapp"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -37,7 +37,6 @@ android {
         targetCompatibility = JavaVersion.VERSION_1_8
     }
 
-
     buildFeatures {
         compose = true
     }
@@ -52,22 +51,7 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
-  /*  kotlin {
-        jvmToolchain {
-            languageVersion.set(JavaLanguageVersion.of(8)) // or 17, to match your needs
-        }
-    }*/
 
-    /*tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
-        kotlinOptions {
-            freeCompilerArgs += "-opt-in=kotlin.RequiresOptIn"
-            freeCompilerArgs += "-opt-in=kotlin.Experimental"
-        }
-    }
-
-    tasks.withType<org.jetbrains.kotlin.gradle.tasks.KaptGenerateStubs>().configureEach {
-        kotlinOptions.jvmTarget = "1.8"
-    }*/
     tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
         kotlinOptions {
             // Treat all Kotlin warnings as errors (disabled by default)
@@ -87,10 +71,10 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.constraintlayout)
     //implementation(libs.androidx.lifecycle.livedata.ktx)
-    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+
     //implementation(libs.androidx.navigation.fragment.ktx)
     //implementation(libs.androidx.navigation.ui.ktx)
-
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation(libs.kotlinx.coroutines.core)
     implementation(libs.kotlinx.coroutines.android)
 
@@ -110,7 +94,7 @@ dependencies {
     implementation(libs.androidx.compose.foundation.layout)
     implementation(libs.androidx.compose.material)
     implementation(libs.androidx.compose.ui.tooling.preview)
-
+    implementation(libs.androidx.compose.material.iconsExtended)
     // Hilt
     implementation(libs.hilt.android)
     implementation(libs.androidx.hilt.navigation.compose)

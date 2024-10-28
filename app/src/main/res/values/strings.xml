@@ -19,4 +19,7 @@
     <string name="pg__loading">Loading Data </string>
     <string name="pg__retry">Please try again</string>
     <string name="pg__app_name">MovieBuff</string>
+    <string name="pg__home_route">Home</string>
+    <string name="pg__detail_route">Detail</string>
+    <string name="pg__search_route">Search</string>
 </resources>
